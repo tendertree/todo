@@ -4,6 +4,10 @@ import App from './App.tsx'
 import './index.css'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import {
+	QueryClient,
+	QueryClientProvider,
+} from '@tanstack/react-query'
 
 
 const router = createBrowserRouter([
@@ -13,10 +17,14 @@ const router = createBrowserRouter([
 	},
 ]);
 
+const queryClient = new QueryClient()
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+
 	<React.StrictMode>
-		<ReactQueryDevtools />
-		<RouterProvider router={router} />
+		<QueryClientProvider client={queryClient}>
+			<ReactQueryDevtools />
+			<RouterProvider router={router} />
+		</QueryClientProvider>
 		<App />
 	</React.StrictMode>,
 )
