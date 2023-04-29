@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { ReactQueryDevtools } from 'react-query-devtools'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 
