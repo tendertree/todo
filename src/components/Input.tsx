@@ -19,7 +19,7 @@ const Input = ({ msg, mutation }: Input) => {
 	};
 	return (
 		<div className="w-full static">
-			<h1 className="relative bottom-10 text-5xl text-white font-display ">To Do. </h1>
+			<h1 className="relative bottom-10 font-bold text-5xl text-white font-display ">To Do. </h1>
 			<div className="new-todo sm:w-full">
 				<form onSubmit={handleSubmit}>
 					<label htmlFor="name" className="font-bold text-2xl">있다가 할일은?</label>

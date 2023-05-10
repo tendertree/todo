@@ -12,7 +12,7 @@ function App() {
 			<div className="flex  flex-col justify-center">
 				<Todoapp gsap={gsap} />
 			</div>
-			<div className="absolute text-white left-5 top-3">tendertree :)</div>
+			<div className="absolute text-white left-10 top-14">tendertree</div>
 		</>
 	);
 }
