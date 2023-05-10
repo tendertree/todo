@@ -4,7 +4,7 @@
 
 @font-face {
 	font-family: 'taebaek';
-	src: url('/font/font/TAEBAEK.ttf');
+	src: url('/font/TAEBAEK.ttf');
 }
 @layer base{
 html{

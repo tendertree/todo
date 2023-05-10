@@ -12,7 +12,9 @@ const Todolist = ({ msg, data, mutation }: TodoListProp) => {
  
 
   useLayoutEffect(() => {
-    const tween = gsap.from(".element", { y: 20 });
+	if(document.querySelector(".element")){
+     gsap.from(".element", { y: 20 });
+		}
   }, [data]);
 
 

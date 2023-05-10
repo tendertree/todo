@@ -22,7 +22,7 @@ const Input = ({ msg, mutation }: Input) => {
 			<h1 className="relative bottom-10 text-5xl text-white font-display ">To Do. </h1>
 			<div className="new-todo sm:w-full">
 				<form onSubmit={handleSubmit}>
-					<label htmlFor="name" className=" text-2xl">있다가 할일은?</label>
+					<label htmlFor="name" className="font-bold text-2xl">있다가 할일은?</label>
 					{/* Added these items into a div in order to align them horizontally */}
 					<div className="flex flex-row items-center justify-center mt-10 ">
 						<input
