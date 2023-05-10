@@ -2,8 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  body{
-    /* ... */
- }
+@font-face {
+	font-family: 'taebaek';
+	src: url('/font/taebaek.ttf');
 }
+@layer base{
+html{
+	font-family: taebaek;
+	color:black;
+background-color:#F8A276;
+	input{
+}
+}
+}
+@layer components {
+body{
+}
+.main{
+background-color:#e8b896;
+}
+
+}
+
+

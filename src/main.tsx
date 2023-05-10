@@ -13,7 +13,7 @@ import {
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <div>Hello world!</div>,
+		element:<App/> ,
 	},
 ]);
 
@@ -24,7 +24,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 		<QueryClientProvider client={queryClient}>
 			<ReactQueryDevtools />
 			<RouterProvider router={router} />
-			<App />
 		</QueryClientProvider>
 	</React.StrictMode>,
 )
