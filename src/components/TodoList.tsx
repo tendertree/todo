@@ -25,7 +25,7 @@ const Todolist = ({ msg, data, mutation }: TodoListProp) => {
   }, [data]);
 
   return (
-    <div className="w-[400px] sm:w-[900px]">
+    <div className="w-[300px] sm:w-[900px]">
       {data &&
         data.map((data, index) => {
           return (
