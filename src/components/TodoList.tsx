@@ -8,7 +8,7 @@ interface TodoListProp {
   mutation: any;
 }
 
-const Todolist = ({ msg, data, mutation }: TodoListProp) => {
+const Todolist = ({ data, mutation }: TodoListProp) => {
  
 
   useLayoutEffect(() => {
