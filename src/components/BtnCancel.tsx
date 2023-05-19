@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 
 interface BtnCancel{
-	msg:string;
-	mutation:()=>void;
+	mutation:{mutate:(id:number)=>void};
 	id:number;
 }
-const BtnCancel =  ({ msg,id,mutation }:BtnCancel)=> {
+const BtnCancel =  ({ id,mutation }:BtnCancel)=> {
 
 
 useEffect(() => {

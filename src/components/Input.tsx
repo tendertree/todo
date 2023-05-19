@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import BtnCancel from "./BtnCancel";
-interface Input {
-	msg: string;
-	mutation: () => void;
+interface InputProps {
+	mutation: { mutate: (message:string)=> void};
 }
-const Input = ({ msg, mutation }: Input) => {
+const Input:React.FC<InputProps> = ({  mutation }) => {
 	const [message, setMessage] = useState("nothing");
 	useEffect(() => {
 		return () => { };
 	}, []);
-	const handleChange = (event) => {
+	const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
 		setMessage(event.target.value);
 	};
 	const handleSubmit = (event: React.SyntheticEvent): void => {
